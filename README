@@ -1,0 +1,9 @@
+- git init
+- Initialized empty Git repository in /Users/shasha/Desktop/udemy_course/Git/Story/.git/
+
+- ls 
+<!-- to see hidden files:  -->
+- ls - a
+
+<!-- to show untracked files, not yet in the staging area staged to be committed -->
+- git status 
