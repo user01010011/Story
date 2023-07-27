@@ -7,3 +7,14 @@
 
 <!-- to show untracked files, not yet in the staging area staged to be committed -->
 - git status 
+
+<!-- add everything in the directory: -->
+- git add .
+
+- git status 
+
+<!-- commit message should always use present tense.  -->
+- git commit -m "Initial Commit"
+
+<!-- to see what commits you have made -->
+- git log
