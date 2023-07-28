@@ -73,3 +73,6 @@ git branch
 
 <!-- to switch to a branch:  -->
 git checkout <branch-name>
+
+<!-- to check which branch you are on: -->
+git branch
