@@ -1,3 +1,4 @@
+
 - git init
 - Initialized empty Git repository in /Users/shasha/Desktop/udemy_course/Git/Story/.git/
 
@@ -8,13 +9,70 @@
 <!-- to show untracked files, not yet in the staging area staged to be committed -->
 - git status 
 
-<!-- add everything in the directory: -->
+<!-- add everything in the directory: (push files to stagin area)-->
 - git add .
 
 - git status 
 
-<!-- commit message should always use present tense.  -->
+<!-- commit message should always use present tense. You are doing it now. -->
 - git commit -m "Initial Commit"
 
 <!-- to see what commits you have made -->
 - git log
+
+<!-- git flow: -->
+Working Directory -> Staging Area -> Local Repository
+git init -> git add . -> git commit
+
+<!-- why staging area? sometimes you might not want to add all your files to be committed, what to ignore, what to be tracked -->
+
+<!-- to revert back to previous version -->
+Working Directory -> Staging Area -> Local Repository
+<- git checkout 
+
+<!-- to see the differences/changes in file  -->
+git diff 
+git diff chapter3.txt
+
+<!-- to revert back / rollback -->
+git checkout chapter3.txt
+
+<!-- to delete the hidden .git file use command line:  -->
+rm -rf .git
+
+git init
+git add . 
+git status 
+git commit -m "Initial Commit"
+git remote add origin https://github.com/user01010011/<repo_name>.git 
+git branch -m main 
+git push -u origin main
+
+
+Working Directory -> Staging Area -> Local Repository (.git) -- git push -> Remote Repository (github)
+
+<!-- remove files from git staging area: -->
+git rm --cached -r .
+
+<!-- use # to comment in .gitignore file -->
+# this is a comment
+<!-- use * (wildcard) to ignore all files with a certain file extension (.txt, or .pdf).  -->
+*.txt
+
+Working Directory -> Staging Area -> Local Repository (.git) <-- git checkout --Remote Repository (github)
+
+<!-- to clone a GitHub repo to your local repository: -->
+git clone https://github.com/<username>/<repo>.git
+git clone https://github.com/user01010011/swift-2048.git
+
+<!-- to create a new branch:  -->
+git branch <branch-name>
+
+<!-- to list all branches:  -->
+git branch
+
+<!-- to switch to a branch:  -->
+git checkout <branch-name>
+
+<!-- to check which branch you are on: -->
+git branch
